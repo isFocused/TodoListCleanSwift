@@ -13,6 +13,8 @@
 		5F15892329A6ABAF006540CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892129A6ABAF006540CC /* Main.storyboard */; };
 		5F15892529A6ABB1006540CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892429A6ABB1006540CC /* Assets.xcassets */; };
 		5F15892829A6ABB1006540CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892629A6ABB1006540CC /* LaunchScreen.storyboard */; };
+		5F15893129A6ADF8006540CC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15893029A6ADF8006540CC /* TableViewController.swift */; };
+		5F15893529A6AEF9006540CC /* ListCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15893429A6AEF9006540CC /* ListCheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5F15892429A6ABB1006540CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F15892729A6ABB1006540CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F15892929A6ABB1006540CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F15893029A6ADF8006540CC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5F15893429A6AEF9006540CC /* ListCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				5F15891B29A6ABAF006540CC /* AppDelegate.swift */,
 				5F15891D29A6ABAF006540CC /* SceneDelegate.swift */,
-				5F15891F29A6ABAF006540CC /* ViewController.swift */,
+				5F15892F29A6ADE5006540CC /* Screen */,
 				5F15892129A6ABAF006540CC /* Main.storyboard */,
 				5F15892429A6ABB1006540CC /* Assets.xcassets */,
 				5F15892629A6ABB1006540CC /* LaunchScreen.storyboard */,
 				5F15892929A6ABB1006540CC /* Info.plist */,
 			);
 			path = TodoListCleanSwift;
+			sourceTree = "<group>";
+		};
+		5F15892F29A6ADE5006540CC /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5F15893329A6AEF1006540CC /* New Group1 */,
+				5F15893229A6AEED006540CC /* New Group */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		5F15893229A6AEED006540CC /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				5F15893029A6ADF8006540CC /* TableViewController.swift */,
+				5F15893429A6AEF9006540CC /* ListCheckBox.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5F15893329A6AEF1006540CC /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				5F15891F29A6ABAF006540CC /* ViewController.swift */,
+			);
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F15893529A6AEF9006540CC /* ListCheckBox.swift in Sources */,
 				5F15892029A6ABAF006540CC /* ViewController.swift in Sources */,
 				5F15891C29A6ABAF006540CC /* AppDelegate.swift in Sources */,
 				5F15891E29A6ABAF006540CC /* SceneDelegate.swift in Sources */,
+				5F15893129A6ADF8006540CC /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
