@@ -11,8 +11,7 @@ import UIKit
 protocol ListCheckBoxDelegate: AnyObject {
 	
 	/// Delegate method that registers the change when the element is clicked
-	/// - Parameter select: Current value
-	func update(select: Bool)
+	func updateAction()
 }
 
 /// Class describing the implementation of the CheckBox in the user interface
@@ -35,7 +34,8 @@ final class ListCheckBox: UIControl {
 	}
 	
 	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+		super.init(coder: coder)
+		configureView()
 	}
 }
 
@@ -65,6 +65,6 @@ private extension ListCheckBox {
 	
 	func selected() {
 		isSelected.toggle()
-		delegate?.update(select: isSelected)
+		delegate?.updateAction()
 	}
 }

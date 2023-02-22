@@ -9,25 +9,67 @@
 /* Begin PBXBuildFile section */
 		5F15891C29A6ABAF006540CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15891B29A6ABAF006540CC /* AppDelegate.swift */; };
 		5F15891E29A6ABAF006540CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15891D29A6ABAF006540CC /* SceneDelegate.swift */; };
-		5F15892029A6ABAF006540CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15891F29A6ABAF006540CC /* ViewController.swift */; };
 		5F15892329A6ABAF006540CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892129A6ABAF006540CC /* Main.storyboard */; };
 		5F15892529A6ABB1006540CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892429A6ABB1006540CC /* Assets.xcassets */; };
 		5F15892829A6ABB1006540CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F15892629A6ABB1006540CC /* LaunchScreen.storyboard */; };
-		5F15893129A6ADF8006540CC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15893029A6ADF8006540CC /* TableViewController.swift */; };
 		5F15893529A6AEF9006540CC /* ListCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F15893429A6AEF9006540CC /* ListCheckBox.swift */; };
+		5F7873FC29A78D62002003FB /* ListDataSourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F7873FB29A78D62002003FB /* ListDataSourse.swift */; };
+		5FA9D83A29A76A2D00B860C9 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D83929A76A2D00B860C9 /* Section.swift */; };
+		5FA9D83D29A76A5700B860C9 /* ImportantTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D83C29A76A5700B860C9 /* ImportantTask.swift */; };
+		5FA9D83F29A76A7800B860C9 /* RegularTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D83E29A76A7800B860C9 /* RegularTask.swift */; };
+		5FA9D84129A76BEE00B860C9 /* ListImportantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84029A76BEE00B860C9 /* ListImportantViewCell.swift */; };
+		5FA9D84329A76C0400B860C9 /* ListRegularViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84229A76C0400B860C9 /* ListRegularViewCell.swift */; };
+		5FA9D84629A76D1A00B860C9 /* TaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84529A76D1A00B860C9 /* TaskManager.swift */; };
+		5FA9D84829A76D3800B860C9 /* SortedTaskManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84729A76D3800B860C9 /* SortedTaskManager.swift */; };
+		5FA9D84A29A76D5300B860C9 /* SectionForTaskManagerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84929A76D5300B860C9 /* SectionForTaskManagerAdapter.swift */; };
+		5FA9D84C29A76D6800B860C9 /* TasksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA9D84B29A76D6800B860C9 /* TasksRepository.swift */; };
+		5FE50F0F29A7395400DDC97C /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0929A7395400DDC97C /* AuthPresenter.swift */; };
+		5FE50F1029A7395400DDC97C /* AuthWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0A29A7395400DDC97C /* AuthWorker.swift */; };
+		5FE50F1129A7395400DDC97C /* AuthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0B29A7395400DDC97C /* AuthRouter.swift */; };
+		5FE50F1229A7395400DDC97C /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0C29A7395400DDC97C /* AuthModels.swift */; };
+		5FE50F1329A7395400DDC97C /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0D29A7395400DDC97C /* AuthViewController.swift */; };
+		5FE50F1429A7395400DDC97C /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F0E29A7395400DDC97C /* AuthInteractor.swift */; };
+		5FE50F1B29A7398A00DDC97C /* ListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1529A7398A00DDC97C /* ListPresenter.swift */; };
+		5FE50F1C29A7398A00DDC97C /* ListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1629A7398A00DDC97C /* ListWorker.swift */; };
+		5FE50F1D29A7398A00DDC97C /* ListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1729A7398A00DDC97C /* ListRouter.swift */; };
+		5FE50F1E29A7398A00DDC97C /* ListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1829A7398A00DDC97C /* ListModels.swift */; };
+		5FE50F1F29A7398A00DDC97C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1929A7398A00DDC97C /* ListViewController.swift */; };
+		5FE50F2029A7398A00DDC97C /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F1A29A7398A00DDC97C /* ListInteractor.swift */; };
+		5FE50F2329A746DA00DDC97C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE50F2229A746DA00DDC97C /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F15891829A6ABAF006540CC /* TodoListCleanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoListCleanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F15891B29A6ABAF006540CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F15891D29A6ABAF006540CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F15891F29A6ABAF006540CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5F15892229A6ABAF006540CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F15892429A6ABB1006540CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F15892729A6ABB1006540CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F15892929A6ABB1006540CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F15893029A6ADF8006540CC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5F15893429A6AEF9006540CC /* ListCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCheckBox.swift; sourceTree = "<group>"; };
+		5F7873FB29A78D62002003FB /* ListDataSourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSourse.swift; sourceTree = "<group>"; };
+		5FA9D83929A76A2D00B860C9 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		5FA9D83C29A76A5700B860C9 /* ImportantTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportantTask.swift; sourceTree = "<group>"; };
+		5FA9D83E29A76A7800B860C9 /* RegularTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularTask.swift; sourceTree = "<group>"; };
+		5FA9D84029A76BEE00B860C9 /* ListImportantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListImportantViewCell.swift; sourceTree = "<group>"; };
+		5FA9D84229A76C0400B860C9 /* ListRegularViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRegularViewCell.swift; sourceTree = "<group>"; };
+		5FA9D84529A76D1A00B860C9 /* TaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManager.swift; sourceTree = "<group>"; };
+		5FA9D84729A76D3800B860C9 /* SortedTaskManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortedTaskManager.swift; sourceTree = "<group>"; };
+		5FA9D84929A76D5300B860C9 /* SectionForTaskManagerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionForTaskManagerAdapter.swift; sourceTree = "<group>"; };
+		5FA9D84B29A76D6800B860C9 /* TasksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRepository.swift; sourceTree = "<group>"; };
+		5FE50F0929A7395400DDC97C /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		5FE50F0A29A7395400DDC97C /* AuthWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthWorker.swift; sourceTree = "<group>"; };
+		5FE50F0B29A7395400DDC97C /* AuthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRouter.swift; sourceTree = "<group>"; };
+		5FE50F0C29A7395400DDC97C /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		5FE50F0D29A7395400DDC97C /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		5FE50F0E29A7395400DDC97C /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		5FE50F1529A7398A00DDC97C /* ListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPresenter.swift; sourceTree = "<group>"; };
+		5FE50F1629A7398A00DDC97C /* ListWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWorker.swift; sourceTree = "<group>"; };
+		5FE50F1729A7398A00DDC97C /* ListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRouter.swift; sourceTree = "<group>"; };
+		5FE50F1829A7398A00DDC97C /* ListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModels.swift; sourceTree = "<group>"; };
+		5FE50F1929A7398A00DDC97C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		5FE50F1A29A7398A00DDC97C /* ListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		5FE50F2229A746DA00DDC97C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +104,11 @@
 			children = (
 				5F15891B29A6ABAF006540CC /* AppDelegate.swift */,
 				5F15891D29A6ABAF006540CC /* SceneDelegate.swift */,
+				5FE50F2229A746DA00DDC97C /* AuthManager.swift */,
+				5FA9D84529A76D1A00B860C9 /* TaskManager.swift */,
+				5FA9D84729A76D3800B860C9 /* SortedTaskManager.swift */,
+				5FA9D84929A76D5300B860C9 /* SectionForTaskManagerAdapter.swift */,
+				5FA9D84B29A76D6800B860C9 /* TasksRepository.swift */,
 				5F15892F29A6ADE5006540CC /* Screen */,
 				5F15892129A6ABAF006540CC /* Main.storyboard */,
 				5F15892429A6ABB1006540CC /* Assets.xcassets */,
@@ -74,27 +121,67 @@
 		5F15892F29A6ADE5006540CC /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				5F15893329A6AEF1006540CC /* New Group1 */,
-				5F15893229A6AEED006540CC /* New Group */,
+				5F15893329A6AEF1006540CC /* Auth */,
+				5F15893229A6AEED006540CC /* List */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
 		};
-		5F15893229A6AEED006540CC /* New Group */ = {
+		5F15893229A6AEED006540CC /* List */ = {
 			isa = PBXGroup;
 			children = (
-				5F15893029A6ADF8006540CC /* TableViewController.swift */,
-				5F15893429A6AEF9006540CC /* ListCheckBox.swift */,
+				5FE50F1529A7398A00DDC97C /* ListPresenter.swift */,
+				5FE50F1629A7398A00DDC97C /* ListWorker.swift */,
+				5FE50F1729A7398A00DDC97C /* ListRouter.swift */,
+				5FE50F1829A7398A00DDC97C /* ListModels.swift */,
+				5FE50F1929A7398A00DDC97C /* ListViewController.swift */,
+				5F7873FB29A78D62002003FB /* ListDataSourse.swift */,
+				5FE50F1A29A7398A00DDC97C /* ListInteractor.swift */,
+				5FE50F2129A7398F00DDC97C /* Subviews */,
+				5FA9D83B29A76A3C00B860C9 /* Model */,
 			);
-			path = "New Group";
+			path = List;
 			sourceTree = "<group>";
 		};
-		5F15893329A6AEF1006540CC /* New Group1 */ = {
+		5F15893329A6AEF1006540CC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				5F15891F29A6ABAF006540CC /* ViewController.swift */,
+				5FE50F0929A7395400DDC97C /* AuthPresenter.swift */,
+				5FE50F0A29A7395400DDC97C /* AuthWorker.swift */,
+				5FE50F0B29A7395400DDC97C /* AuthRouter.swift */,
+				5FE50F0C29A7395400DDC97C /* AuthModels.swift */,
+				5FE50F0D29A7395400DDC97C /* AuthViewController.swift */,
+				5FE50F0E29A7395400DDC97C /* AuthInteractor.swift */,
 			);
-			path = "New Group1";
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		5FA9D83B29A76A3C00B860C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9D83929A76A2D00B860C9 /* Section.swift */,
+				5FA9D83C29A76A5700B860C9 /* ImportantTask.swift */,
+				5FA9D83E29A76A7800B860C9 /* RegularTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5FA9D84429A76C0900B860C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5FA9D84029A76BEE00B860C9 /* ListImportantViewCell.swift */,
+				5FA9D84229A76C0400B860C9 /* ListRegularViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		5FE50F2129A7398F00DDC97C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				5F15893429A6AEF9006540CC /* ListCheckBox.swift */,
+				5FA9D84429A76C0900B860C9 /* Cell */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,11 +255,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA9D83A29A76A2D00B860C9 /* Section.swift in Sources */,
 				5F15893529A6AEF9006540CC /* ListCheckBox.swift in Sources */,
-				5F15892029A6ABAF006540CC /* ViewController.swift in Sources */,
+				5FA9D84829A76D3800B860C9 /* SortedTaskManager.swift in Sources */,
+				5FA9D84329A76C0400B860C9 /* ListRegularViewCell.swift in Sources */,
+				5FE50F1229A7395400DDC97C /* AuthModels.swift in Sources */,
+				5FE50F1329A7395400DDC97C /* AuthViewController.swift in Sources */,
+				5FE50F1429A7395400DDC97C /* AuthInteractor.swift in Sources */,
+				5FA9D83F29A76A7800B860C9 /* RegularTask.swift in Sources */,
+				5FA9D84A29A76D5300B860C9 /* SectionForTaskManagerAdapter.swift in Sources */,
 				5F15891C29A6ABAF006540CC /* AppDelegate.swift in Sources */,
+				5FA9D84129A76BEE00B860C9 /* ListImportantViewCell.swift in Sources */,
+				5FE50F1E29A7398A00DDC97C /* ListModels.swift in Sources */,
+				5FA9D83D29A76A5700B860C9 /* ImportantTask.swift in Sources */,
+				5FA9D84C29A76D6800B860C9 /* TasksRepository.swift in Sources */,
+				5FE50F2029A7398A00DDC97C /* ListInteractor.swift in Sources */,
 				5F15891E29A6ABAF006540CC /* SceneDelegate.swift in Sources */,
-				5F15893129A6ADF8006540CC /* TableViewController.swift in Sources */,
+				5FE50F1029A7395400DDC97C /* AuthWorker.swift in Sources */,
+				5FA9D84629A76D1A00B860C9 /* TaskManager.swift in Sources */,
+				5FE50F2329A746DA00DDC97C /* AuthManager.swift in Sources */,
+				5FE50F1F29A7398A00DDC97C /* ListViewController.swift in Sources */,
+				5FE50F0F29A7395400DDC97C /* AuthPresenter.swift in Sources */,
+				5FE50F1B29A7398A00DDC97C /* ListPresenter.swift in Sources */,
+				5FE50F1C29A7398A00DDC97C /* ListWorker.swift in Sources */,
+				5FE50F1D29A7398A00DDC97C /* ListRouter.swift in Sources */,
+				5F7873FC29A78D62002003FB /* ListDataSourse.swift in Sources */,
+				5FE50F1129A7395400DDC97C /* AuthRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
